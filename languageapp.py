@@ -23,7 +23,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 st.set_page_config(page_title="Template", page_icon=":robot:")
 st.header("Text")
 
-st.markdown("One Stop App for Identifying Sentiment, Emotion expressed, Brand discussed, Important Topics in the sentence. This app also has a capability to convert English sentence to Local Language")
+st.markdown("One Stop App for Identifying Sentiment, Emotion expressed, Brand discussed, Important Topics in the sentence. This app also has a capability to convert English sentence to Local Language. Currently supporting French, Tamil, German, Spanish, Malayalam and Telugu")
 
 st.markdown("## Enter Your Sentence")
 
