@@ -23,9 +23,10 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 st.set_page_config(page_title="Template", page_icon=":robot:")
 st.header("Text")
 
-st.markdown("One Stop App for Identifying Sentiment, Emotion expressed, Brand, Updating Language, Important Topics in the sentence")
+st.markdown("One Stop App for Identifying Sentiment, Emotion expressed, Brand discussed, Important Topics in the sentence. This app also has a capability to convert English sentence to Local Language")
 
 st.markdown("## Enter Your Sentence")
+
 
 def get_api_key():
     input_text = st.text_input(label="OpenAI API Key ",  placeholder="Ex: sk-2twmA8tfCb8un4...", key="openai_api_key_input")
