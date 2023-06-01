@@ -40,7 +40,7 @@ language = st.selectbox('Which language would you like the text to be converted 
         ('French','Spanish','Telugu','Tamil','Malayalam','German','Hindi'))
 
 if input_text:
-    if not openai_api_key:
+    if not openai.api_key:
         st.warning('Please insert OpenAI API Key. Instructions [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)', icon="⚠️")
         st.stop()
 
