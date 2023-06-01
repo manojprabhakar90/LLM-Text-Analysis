@@ -32,12 +32,12 @@ def get_api_key():
     input_text = st.text_input(label="OpenAI API Key ",  placeholder="Ex: sk-2twmA8tfCb8un4...", key="openai_api_key_input")
     return input_text
 
-openai_api_key = get_api_key()
+openai.api_key = get_api_key()
     
 input_text = st.text_area(label="Input", label_visibility='collapsed')
 
 language = st.selectbox('Which language would you like the text to be converted to',
-        ('French','Spanish','Telugu','Tamil','Malayalam','German'))
+        ('French','Spanish','Telugu','Tamil','Malayalam','German','Hindi'))
 
 if input_text:
     if not openai_api_key:
